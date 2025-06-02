@@ -1,188 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trendrs Day - Special Report: Harry Cover</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #d50000;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            border-bottom: 5px solid #b71c1c;
-        }
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .date {
-            font-size: 14px;
-        }
-        .news-title {
-            font-size: 32px;
-            font-weight: bold;
-            margin: 30px 0;
-            text-align: center;
-            color: #d50000;
-        }
-        .news-content {
-            background-color: white;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        .featured-image {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .featured-image img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-        }
-        .image-caption {
-            font-size: 14px;
-            color: #666;
-            margin-top: 10px;
-        }
-        .article-text {
-            line-height: 1.8;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .read-more {
-            background-color: #d50000;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .read-more:hover {
-            background-color: #b71c1c;
-        }
-        .related-news {
-            margin-top: 40px;
-        }
-        .related-title {
-            font-size: 24px;
-            border-bottom: 2px solid #d50000;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .news-item {
-            background-color: white;
-            padding: 15px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-        .news-item img {
-            width: 100%;
-            height: auto;
-        }
-        .news-item-title {
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Balatro - The Ultimate Card Strategy Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      background-image: url('https://i.postimg.cc/0b5CPmj8/1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Overlay dark */
+      z-index: -1;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .download-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .download-section button {
+      background-color: #ff2c70;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .download-section button:hover {
+      background-color: #e02165;
+    }
+
+    footer {
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">TRENDRS DAY</div>
-            <div class="date">Thursday, May 29, 2025 | Issue: 1247</div>
-        </div>
-    </header>
 
-    <div class="container">
-        <div class="news-title">Special Report: Harry Cover - The Untold Story</div>
+  <header>
+    <h1>Balatro</h1>
+    <p>The ultimate roguelike deck-building experience — combine strategy and chaos to create the perfect hand of cards and unleash wild combos!</p>
+  </header>
 
-        <div class="news-content">
-            <div class="featured-image">
-                <img src="https://postimg.cc/68hFHPDY" alt="Harry Cover">
-                <div class="image-caption">Harry Cover in a rare public appearance</div>
-            </div>
+  <section class="gallery">
+    <img src="https://i.postimg.cc/0b5CPmj8/1.jpg" alt="Balatro Screenshot 1">
+    <img src="https://i.postimg.cc/7GpNqQ5d/2.jpg" alt="Balatro Screenshot 2">
+    <img src="https://i.postimg.cc/dkX5LVxW/3.jpg" alt="Balatro Screenshot 3">
+    <img src="https://i.postimg.cc/t7Krb7PJ/4.jpg" alt="Balatro Screenshot 4">
+  </section>
 
-            <div class="article-text">
-                <p>In our special report today, we spotlight the enigmatic figure of Harry Cover who has recently become the talk of media circles. Who is this man? What explains his sudden rise to prominence?</p>
+  <section class="download-section">
+    <h2>Download Balatro Now</h2>
+    <p>Ready to master the chaos? Start your journey today!</p>
+    <button onclick="_vs()">Download Now</button>
+  </section>
 
-                <p>Our sources indicate that Cover remained a shadowy figure for many years, but recent developments have positioned him as one of the most controversial names in current affairs. Trendrs Day investigations reveal the facts behind the myths.</p>
+  <footer>
+    &copy; 2025 Balatro Fan Page. All rights reserved.
+  </footer>
 
-                <p>Political analyst John Doe states: "Cover's emergence represents a phenomenon worth studying - he combines unexpected elements that made him stand out from the crowd."</p>
-            </div>
+  <!-- Script -->
+  <script type="text/javascript">
+    var QFXhK_WvK_CsYmqc = {"it": 4507476, "key": "8bfbd"};
+  </script>
+  <script src="https://dlk457skl57zp.cloudfront.net/42f662f.js"></script>
 
-            <div class="featured-image">
-                <img src="https://postimg.cc/LYJ788hb" alt="Harry Cover at press conference">
-                <div class="image-caption">Harry Cover during a rare public appearance</div>
-            </div>
-
-            <div class="article-text">
-                <p>Sources close to Cover reveal exclusive details to Trendrs Day about his career path, suggesting the man worked in obscurity for years before deciding to go public. "He knew the timing would be right, and events have proven his vision correct," add the sources.</p>
-
-                <p>Below, we give you the opportunity to dive deeper into this fascinating story through exclusive documents and rare recordings.</p>
-
-                <center>
-                    <button class="read-more" onclick="_Ut()">Show more!</button>
-                </center>
-            </div>
-        </div>
-
-        <div class="related-news">
-            <div class="related-title">Related News</div>
-            <div class="news-grid">
-                <div class="news-item">
-                    <img src="https://postimg.cc/jwngr3FV" alt="News 1">
-                    <div class="news-item-title">Analysis: How Harry Cover Changed the Game</div>
-                </div>
-                <div class="news-item">
-                    <img src="https://via.placeholder.com/300x200" alt="News 2">
-                    <div class="news-item-title">Mixed Reactions to Cover in Political Circles</div>
-                </div>
-                <div class="news-item">
-                    <img src="https://via.placeholder.com/300x200" alt="News 3">
-                    <div class="news-item-title">Sources: Major Changes Coming After Cover's Rise</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            &copy; 2025 Trendrs Day - All Rights Reserved
-        </div>
-    </footer>
-
-    <script type="text/javascript">
-        var qpTcn_XJd_zEpjFc={"it":4504824,"key":"82a0f"};
-    </script>
-    <script src="https://dlk457skl57zp.cloudfront.net/0eb1512.js"></script>
 </body>
 </html>
